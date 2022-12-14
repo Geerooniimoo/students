@@ -1,0 +1,1227 @@
+/* #accordionExample * {
+    border: 2px dotted red;
+} */
+
+body {
+    background-image: linear-gradient(24deg, white 35%, #0e5daf 90%, black 110%);
+    height: 1200px;
+    background-size: 100% 200vh;
+    font-family: Abril Fatface, Arial, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    z-index: 7;
+    padding: 5px;
+}
+
+nav button {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(212, 219, 226);
+    margin: 0 10px;
+    border: 2px solid transparent;
+    background: transparent;
+    padding: 8px;
+    border-radius: 12px;
+    font-family: Abril Fatface, Arial, sans-serif;
+    -webkit-text-stroke: 0.5px black;
+}
+
+nav button:hover {
+    color: white;
+    background: rgb(3, 74, 14);
+    border: 2px solid black;
+}
+
+.studentModal {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.forStudents {
+    color: red;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+.forStudents2 {
+    color: white;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    width: 875px;
+    text-align: left;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#collapseTwo h2, #collapseThree h2 {
+    width: 400px;
+}
+
+.professionalDiv {
+    position: relative;
+    right: 550px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#exampleModalLabel {
+    margin: 0 auto 0 325px;
+}
+
+.professionalModal button {
+    border: 2px solid red;
+}
+
+.accordion-button {
+    background: #e7f1ff;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+
+a {
+    color: black;
+}
+
+#accordionExample {
+    display:flex;
+    width: fit-content;
+    margin-bottom: 25px;
+}
+.accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+.img {
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 0;
+}
+#topDiv {
+    background-size: 100% 75%;
+    background-repeat: no-repeat;
+}
+.linkImg {
+    z-index: 5;
+    color: black;
+    text-decoration: none;
+    position: fixed;
+    top: 10px;
+    left: 25px;
+    width: 50px;
+    height: 40px;
+
+    text-decoration: none;
+}
+
+.linkImg h6 {
+    position: relative;
+    display: none;
+    left: 10px;
+    bottom: -10px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+    width: 140px;
+    border: 1px solid black;
+    z-index: 6;
+}
+
+.linkImg2 {
+    z-index: 5;
+    color: black;
+    text-decoration: none;
+    position: fixed;
+    top: 10px;
+    left: 100px;
+    width: 50px;
+    height: 40px;
+}
+
+.linkImg2 h6 {
+    z-index: 6;
+    display: none;
+    position: relative;
+    left: 10px;
+    bottom: -10px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+    width: 163px;
+    border: 1px solid black;
+}
+
+#calenImg {
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    /* opacity: .8; */
+}
+
+.linkImg:hover h6,.linkImg2:hover h6 {
+    display:block;
+}
+
+#evalImg {
+    /* position: fixed; */
+    top: 75px;
+    right: 10px;
+    width: 50px;
+    height: 35px;
+    /* opacity: .8; */
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+#headingTwo {
+    position: relative;
+    z-index: 8;
+    background: white;
+}
+
+#scheImg {
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: fixed;
+    right: 1%;
+    top: 50px;
+    background-color: #fff;
+}
+
+#title {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: skewX(40deg);
+    width: 650px;
+    height: 150px;
+    box-shadow: -25px 15px 5px grey;
+    border-top: 4px solid #a39f9f;
+    border-right: 4px solid #a39f9f;
+    border-left: 4px solid red;
+    border-bottom: 4px solid red;
+    border-radius: 15px 15px;
+    padding: 10px 40px;
+    text-anchor: middle;
+}
+
+#title h4, #title a {
+    transform: skewX(-40deg);
+    font-size: 1.8rem;
+    font-family: Abril Fatface, Arial, sans-serif;
+}
+.modal-dialog {
+    max-width: 80%;
+}
+.accordion {
+    width: 20rem;
+    margin: 0 auto;
+}
+.sessions {
+    margin: 7vh 0;
+    text-shadow: 5px 5px 5px black;
+    position: relative;
+}
+
+.sessions h4 {
+    font-size: 2.5rem;
+}
+
+.team {
+    background-image: url('./images/team.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: black;
+    padding: 10%;
+}
+.leaflet {
+    background-image: url('./images/leaflet.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: black;
+    padding: 10%;
+}
+.vba {
+    background-image: url('./images/vba0.jpg');
+    color: black;
+    padding: 10%;
+}
+.firebase {
+    background-image: url('./images/firebase1.jpg');
+    background-size: 100% 135%;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    color: black;
+    padding: 10%;
+}
+.mars {
+    background-image: url('./images/mars1.png');
+    background-size: 100% 135%;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    color: black;
+    padding: 10%;
+}
+.vba div, .team div, .leaflet div, .firebase div, .mars div {
+    background-color: #fff;
+    padding: 2%;
+    opacity: .85;
+    box-shadow: 5px 5px 20px;
+}
+.python {
+    background-image: url('./images/python0.png');
+    background-size: 110% 100%;
+}
+.geronimo {
+    color: cornflowerblue;
+}
+.titleImg {
+    width: 35px;
+    transform: skewX(-40deg);
+    margin: 0 0 0 auto;
+    border-radius: 5px;
+    margin: 0 10px;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+}
+.titleImg2 {
+    width: 35px;
+    transform: skewX(-40deg);
+    margin: 0 0 0 auto;
+    border-radius: 5px;
+    margin: 0 10px;
+    position: absolute;
+    right: 60px;
+    bottom: 10px;
+}
+
+.titleImg1 {
+    width: 100px;
+    transform: skewX(-40deg);
+    margin: 0 0 0 auto;
+    border-radius: 5px;
+    margin: 0 10px;
+    position: absolute;
+    right: 15px;
+    bottom: 4px;
+}
+
+.textShadow {
+    fill: red;
+    stroke:black;
+    text-shadow: 3px 3px 4px black;
+}
+.textLetter {
+    fill: white;
+    stroke:black;
+}
+.type {
+    position: relative;
+    width: 90%;
+    transform: skewX(40deg);
+    overflow: hidden;
+    /* background: white; */
+    /* margin: 0% 0 5% 10%; */
+    text-align: center;
+    padding: 5% 0%;
+    margin: 0% auto;
+    height: 7.5rem;
+}
+
+.type p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    animation: scroll 6s linear;
+    position: absolute;
+    bottom: 10px;
+    font-family: Abril Fatface, Arial, sans-serif;
+}
+
+.accordion-flush .accordion-item:last-of-type .accordion-button.collapsed {
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 50px;
+}
+
+.accordion-button, .collapsed {
+    height: 50px;
+    /* border: 2px solid black; */
+    /* border-radius: 8px; */
+}
+
+.accordion-item {
+    max-width: 400px;
+    margin: 15px 20px 0px 20px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+#analyst, #developer, #evaluation {
+    background-image: url(../images/Data-Analytics.png);
+    background-size: 100% 100%;
+    margin-top: 50px;
+    position: relative;
+    height: 150px;
+    width: 300px;
+}
+
+#developer {
+    background-image: url(../images/Web-Development.png);
+}
+
+#evaluation {
+    left: 50px;
+    background-image: url(../images/evaluation1.png);
+}
+
+#developer h6, #analyst h6, #evaluation h6 {
+    position: absolute;
+    font-size: 1rem;
+    color: black;
+    top: -25px;
+    width: 100%;
+}
+
+.evalTitle {
+    margin-top: 35px;
+}
+
+.scheduleDiv {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+}
+
+.scheduleDiv h2 {
+    text-align-last: left;
+}
+
+#collapseTwo .scheduleDev {
+    top: 139px;
+}
+
+.knowledgeDiv {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 300%;
+    right: 100%;
+}
+
+.analyticDiv, .webDiv {
+    text-align-last: left;
+    font-family: serif;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 8px;
+    width: 300px;
+    border: 2px solid black;
+}
+
+.analyticDiv {
+    /* position: absolute;
+    right: 180px; */
+}
+
+.webDiv {
+    /* position: relative;
+    left: 180px; */
+}
+
+#collapseTwo button {
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+#collapseThree button {
+    border: 2px solid red;
+    border-radius: 8px;
+    left: 0;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(110%);
+    }
+    80% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+#titleDiv {
+    transform: skewX(40deg);
+    font-family: Abril Fatface, Arial, sans-serif;
+    /* font-size: 2.8rem; */
+}
+@keyframes scroll2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-110%);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+#typeDiv {
+    position: relative;
+    z-index: 1;
+    color: white;
+    margin: 0 auto;
+    height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: skewX(-40deg);
+    background: black;
+    width: 650px;
+    box-shadow: -25px 15px 5px grey;
+    border-right: 4px solid #a39f9f;
+    border-left: 4px solid red;
+    border-top: 4px solid red;
+    border-bottom: 4px solid #a39f9f;
+    border-radius: 15px 15px;
+    padding: 10px 40px;
+    text-anchor: middle;
+    overflow: hidden;
+    animation: type 11.5s;
+}
+
+@keyframes type {
+    0% {
+        opacity: 0;
+        transform:translateY(-200px);
+        transform:skewX(-40deg);
+    }
+    90% {
+        opacity: 0;
+        transform:translateY(-200px);
+    }
+    100% {
+        transform:translateY(0);
+        transform:skewX(-40deg);
+    }
+}
+
+#typeDiv:hover #rewind {
+    left: 0;
+}
+#rewind {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 20%;
+    height: 100%;
+    background: white;
+    opacity: .8;
+    transition-property: left;
+    transition-duration: .6s;
+}
+#typeDiv:hover #forward {
+    right:0;
+}
+#forward {
+    position: absolute;
+    top: 0;
+    opacity: .8;
+    right: -100%;
+    width: 20%;
+    height: 100%;
+    background: white;
+    transition-property: right;
+    transition-duration: .6s;
+}
+#speechTitle {
+    text-align: center;
+    color: cornflowerblue;
+    font-family: Abril Fatface, Arial, sans-serif;
+    font-size: 1.8rem;
+}
+
+#hours {
+    position: relative;
+    z-index: 2;
+    height: 60px;
+    width: 115px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family:sans-serif;
+}
+
+.hours {
+    display: inline-block;
+    position: relative;
+    text-shadow: none;
+    z-index: 1;
+    transform-origin: -20%;
+    animation: hours 3.5s 8s;
+}
+
+.hours g text {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.child_1 {
+    cx: 50%;
+    cy: 84%;
+    r: 40%;
+    /* stroke: black; */
+    border: 2px solid black;
+    fill: yellow;
+}
+.child_4 {
+    cx: 57%;
+    cy: 48%;
+    r: 12%;
+    border: 2px solid black;
+    fill: yellow;
+}
+.child_5 {
+    cx: 21%;
+    cy: 27%;
+    rx: 16%;
+    ry: 19%;
+    border: 2px solid black;
+    fill: #216ab5;
+}
+.child_6 {
+    cx: 85%;
+    cy: 13%;
+    rx: 14%;
+    ry: 37%;
+    fill: #216ab5;
+}
+.child_8 {
+    cx: 64%;
+    cy: 13%;
+    rx: 14%;
+    ry: 15%;
+    border: 2px solid black;
+    fill: #216ab5;
+}
+.child_9 {
+    cx: 53%;
+    cy: 42%;
+    rx: 6%;
+    ry: 7%;
+    border: 2px solid black;
+    fill: orange;
+}
+.child_7 {
+    cx: 51%;
+    cy: 22%;
+    r: 31%;
+    border: 2px solid black;
+    fill: orange;
+}
+.child_3 {
+    cx: 34%;
+    cy: 50%;
+    r: 13%;
+    border: 2px solid black;
+    fill: orange;
+}
+.child_2 {
+    cx: 77%;
+    cy: 48%;
+    rx: 10%;
+    ry: 17%;
+    /* stroke: black; */
+    border: 2px solid black;
+    fill: orange;
+}
+.child_10 {
+    r: 50%;
+    fill: black;
+    cx: 50%;
+    cy: 50%;
+    fill: orange;
+}
+
+.carousel {
+    box-shadow: 5px 5px 20px black;
+    transform-origin: 50% 50%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 5% auto;
+    width: 900px;
+    border: 2px solid black;
+    animation: carousel 3s;
+    position: relative;
+}
+
+.carousel a {
+    position: absolute;
+    border: 2px solid black;
+    padding: 5px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 200px;
+    border-radius: 8px;
+    text-align: center;
+    background: lightgrey;
+    opacity: .65;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+@keyframes carousel {
+    0% {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+}
+
+.caroImg {
+    height: 450px;
+    animation: caroImg 9s;
+}
+
+@keyframes caroImg {
+    0% {
+        opacity: 0;
+        
+        transform: scale(200%);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+@keyframes hours {
+    0% {
+        transform: rotate(6deg);
+    }
+    2% {
+        transform: rotate(0deg);
+    }
+    4% {
+        transform: rotate(6deg);
+    }
+    6% {
+        transform: rotate(0deg);
+    }
+    8% {
+        transform: rotate(6deg);
+    }
+    10% {
+        transform: rotate(10deg);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    20% {
+        transform: rotate(110deg);
+    }
+    30% {
+        transform: rotate(80deg);
+    }
+    40% {
+        transform: rotate(100deg);
+    }
+    50% {
+        transform: rotate(90deg) translateY(0);
+        
+    }
+    65% {
+        opacity: 1;
+        transform:scale(100%) rotate(90deg) translateX(0);
+    }
+    80% {
+        opacity: 0;
+        transform:rotate(90deg) translateX(100px) scale(200%);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.fire {
+    position: absolute;
+    top: -50%;
+    left: 0%;
+    z-index: 1;
+    width: 50px;
+    height: 55px;
+    border-radius: 90px;
+    background: orange;
+    opacity: 0;
+    animation: fire 6s 1s;
+}
+@keyframes fire {
+    0% {
+        opacity: 1;
+    }
+    8%{
+        transform: rotateY(0deg);
+    }
+    10% {
+        transform: rotateY(50deg);
+    }
+    18% {
+        transform: rotateY(50deg);
+    }
+    20% {
+        transform: rotateY(0deg);
+    }
+    28% {
+        transform: rotateY(180deg);
+    }
+    30% {
+        transform: rotateY(50deg);
+    }
+    38% {
+        transform: rotateY(50deg);
+    }
+    40% {
+        transform: rotateY(180deg);
+    }
+    48% {
+        transform: rotateY(180deg);
+    }
+    50% {
+        transform: rotateY(0deg);
+    }
+    70% {
+        transform: rotateY(50deg);
+    }
+    80% {
+        left: 60%;
+        opacity: 1;
+    }
+    100% {
+        transform: rotateY(90deg);
+        left: 60%
+    }
+}
+.eli1 {
+    cx: 21%;
+    cy: 7%;
+    rx: 12%;
+    ry: 7%;
+    fill: gray;
+}
+.eli2 {
+    cx: 29%;
+    cy: 21%;
+    rx: 9%;
+    ry: 7%;
+    fill: gray;
+}
+.smoke {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left: 50%;
+    top: -75%;
+    opacity: 0;
+    animation: smoke 4s 6s;
+}
+@keyframes smoke {
+    10% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(1px) scale(400%);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .carousel {
+        width: 700px;
+    }
+
+    #exampleModal .scheduleDev {
+        position: absolute;
+        top: 118px;
+        left: 400px;
+    }
+
+    #exampleModal #analyst {
+        left: 25px;
+    }
+
+    #exampleModal #evaluation {
+        left: 25px;
+    }
+
+    .studentModal .scheduleDiv {
+        justify-content: space-between;
+        width: 670px;
+    }
+}
+
+@media screen and (max-width:950px) and (max-height:450px) and (orientation: landscape) {
+
+    body {
+        background-size: 100% 600vh;
+    }
+    
+    #accordionExample {
+        width: 100%;
+        margin: 25px auto;
+        justify-content: space-around;
+    }
+
+    .accordion-item {
+        margin: 0 auto;
+        width: 220px;
+    }
+
+    .mx-auto {
+        font-size: 1.2rem;
+    }
+
+    .sessions h4 {
+        font-size: 2.2rem;
+        margin-top: 80px;
+    }
+
+    .scheduleDiv {
+        justify-content: space-between;
+        width: 550px;
+        margin-left: 50px;
+    }
+
+    .professionalDiv {
+        padding-left: 80px;
+    }
+
+    #topDiv {
+        margin-top: 60px;
+    }
+
+    .forStudents2 {
+        width: 700px;
+    }
+
+    #exampleModalLabel {
+        margin: 0 auto 0 230px;
+    }
+
+    .studentModal .scheduleDiv {
+        width: 500px;
+    }
+
+    #analyst, #developer, #evaluation {
+        width: 200px;
+    }
+
+    .forStudents {
+        font-size: 1rem;
+    }
+
+    #title {
+        width: 550px;
+        height: 160px;
+    }
+    
+    #typeDiv {
+        width: 550px;
+        height: 160px;
+    }
+    
+}
+
+
+@media screen and (max-width: 576px) {
+    body {
+        background-size: 100% 340vh;
+        background-image: linear-gradient(24deg, white 74%, #0e5daf 90%, black 100%);
+    }
+
+    nav {
+        display: none;
+    }
+
+    .titleImg1 {
+        transform: skewX(0deg);
+        right: 0;
+        bottom: 4px;
+    }
+
+    .titleImg2 {
+        transform: skewX(0deg);
+        right: 46px;
+        bottom: 10px;
+    }
+    
+    .titleImg {
+        transform: skewX(0deg);
+        right: 95px;
+        bottom: 10px;
+    }
+
+    #typeDiv {
+        border-top: 4px solid black;
+        border-bottom: 4px solid red;
+    }
+
+    #topDiv {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #topDiv div:nth-child(2) {
+        order: 1;
+        width: 100%;
+    }
+
+    #topDiv div:nth-child(1) {
+        order: 2;
+    }
+
+    #topDiv div:nth-child(3) {
+        order: 3;
+    }
+
+    #title {
+        position: relative;
+        transform: skewX(0deg);
+        width: auto;
+        box-shadow: none;
+        border-left: none;
+        border-radius: 0px;
+        padding: 0;
+    }
+
+    #typeDiv {
+        position: relative;
+        transform: skewX(0deg);
+        width: auto;
+        box-shadow: none;
+        border-left: none;
+        border-radius: 0px;
+        padding: 0;
+    }
+
+    #titleDiv {
+        transform: skewX(0deg);
+    }
+
+    #title h4 {
+        transform: skewX(0deg);
+        font-size: 1.7rem;
+    }
+
+    .type {
+        transform: skewX(0deg);
+    }
+
+    #type {
+        width: 100%;
+        max-width: 100%;
+        font-size: .9rem;
+        padding: 5%;
+    }
+
+    .knowledgeDiv {
+        right: 0;
+    }
+
+    .professionalDiv {
+        right: 0;
+    }
+    
+
+    .carousel {
+        width: 95%;
+    }
+
+    .caroImg {
+        height: 400px;
+    }
+
+
+    #accordionExample div:nth-child(2) {
+        order: 3;
+    }
+
+    #accordionExample div:nth-child(1) {
+        order: 2;
+    }
+
+    .accordion-item:nth-child(n+2) {
+        margin: 0;
+    }
+
+    .accordion-button {
+        padding: 4px 0;
+    }
+
+    #accordionExample {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .accordion-item {
+        margin: 0;
+        width: 100%;
+    }
+
+    .accordion-item h4 {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .sessions {
+        margin: 2vh auto 0 auto;
+    }
+
+    #calenImg, #evalImg {
+        display: none;
+    }
+
+    .carousel {
+        width: 95%;
+    }
+
+    .sessions h4 {
+        font-size: 1.5rem;
+        margin: 25px auto;
+    }
+
+    .accordion-flush .accordion-item:last-of-type .accordion-button.collapsed {
+        height: 45px;
+        margin: 5px auto;
+        background: transparent;
+    }
+
+    #headingTwo {
+        position: relative;
+        z-index: 8;
+        background: transparent;
+    }
+
+    .accordion-flush .accordion-item:first-of-type .accordion-button {
+        background: transparent;
+        border: 2px solid black;
+        border-radius: 8px;
+        color: black;
+    }
+
+    .accordion-body {
+        width: 100%;
+    }
+
+    .forStudents2 {
+        font-size: .88rem;
+        width: auto;
+        padding: 0;
+    }
+
+    .scheduleDiv {
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #evaluation {
+        margin-top: 40px;
+        left: 25px;
+    }
+
+    /* #topDiv div:nth-child(2) {
+        width: auto;
+    } */
+
+    .analyticDiv, .webDiv {
+        background: transparent;
+        border: none;
+        overflow: auto;
+        border: 2px solid black;
+        background: white;
+    }
+    @keyframes hours {
+        0% {
+            transform: rotate(6deg);
+        }
+        2% {
+            transform: rotate(0deg);
+        }
+        4% {
+            transform: rotate(6deg);
+        }
+        6% {
+            transform: rotate(0deg);
+        }
+        8% {
+            transform: rotate(6deg);
+        }
+        10% {
+            transform: rotate(10deg);
+        }
+        20% {
+            transform: rotate(10deg);
+        }
+        20% {
+            transform: rotate(110deg);
+        }
+        30% {
+            transform: rotate(80deg);
+        }
+        40% {
+            transform: rotate(100deg);
+        }
+        50% {
+            transform: rotate(90deg) translateY(0);
+            
+        }
+        65% {
+            opacity: 1;
+            transform:scale(100%) rotate(90deg) translateX(0);
+        }
+        80% {
+            opacity: 0;
+            transform:rotate(90deg) translateX(5px) scale(200%);
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes type {
+        0% {
+            opacity: 0;
+            transform:translateY(-40px);
+        }
+        90% {
+            opacity: 0;
+            transform:scale(80%) translateY(-40px);
+        }
+        100% {
+            transform:translateY(0);
+        }
+    }
+
+}

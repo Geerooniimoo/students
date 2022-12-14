@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril Fatface">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Analytics And Web Development</title>
+</head>
+
+<body>
+    <nav>
+        <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Students
+        </button>
+
+        <button data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            Professionals
+        </button>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content studentModal">
+                <div class="modal-header">
+                    <h1 class="modal-title text-center" id="exampleModalLabel">Students</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="accordion-body">
+                        <p class="forStudents">These sessions are for students registered in the Data Visualization or
+                            Full Stack Web Developer boot camp and are allowed to have one or more sessions per week.
+                        </p>
+                        <h2>Schedule Session</h2>
+                        <div class="scheduleDiv">
+
+                            <a target="_blank" href="https://calendly.com/dv-tutor-team/geronimo-perez"><button
+                                    id="analyst" class="btn btn-outline-primary">
+                                    <h6 class="g-font">Data Analytics</h6>
+                                </button></a>
+
+                            <a target="_blank" href="https://calendly.com/fsf-tutor-team/geronimo-perez"><button
+                                    id="developer" class="btn btn-outline-primary">
+                                    <h6 class="g-font">Web Development</h6>
+                                </button></a>
+                        </div>
+
+                        <h2 class="evalTitle">Evaluation</h2>
+                        <a target="_blank"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdb4ejjbqoqKO-Q4k7zeO_xwykwB0dxYLWYm1mX5Ik45MzEeg/viewform">
+                            <button id="evaluation">
+                                <h6 class="g-font">Student's Evaluation</h6>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content studentModal">
+                <div class="modal-header">
+                    <h1 class="modal-title text-center" id="exampleModalLabel">Professionals</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body professionalModal">
+                    <div class="accordion-body">
+                        <h2>Schedule Private Session</h2>
+                        <div class="scheduleDiv">
+
+                            <a target="_blank"
+                                href="https://calendly.com/geronimo-perez/private-tutoring-session"><button id="analyst"
+                                    class="btn btn-outline-primary">
+                                    <h6 class="g-font">Data Analytics</h6>
+                                </button></a>
+
+                            <a target="_blank"
+                                href="https://calendly.com/geronimo-perez/private-tutoring-session"><button
+                                    id="developer" class="btn btn-outline-primary">
+                                    <h6 class="g-font">Web Development</h6>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="topDiv">
+        <div class="sessions">
+            <h4 class="text-center text-white fst-italic">Tutored over
+                <span class="hours">
+                    <svg class="smoke">
+                        <ellipse class="eli1"></ellipse>
+                        <ellipse class="eli2"></ellipse>
+                    </svg>
+                    <svg class="fire">
+                        <circle class="child_10"></circle>
+                        <circle class="child_1"></circle>
+                        <ellipse class="child_2"></ellipse>
+                        <circle class="child_3"></circle>
+                        <ellipse class="child_5"></ellipse>
+                        <ellipse class="child_6"></ellipse>
+                        <circle class="child_7"></circle>
+                        <circle class="child_4"></circle>
+                        <ellipse class="child_8"></ellipse>
+                        <ellipse class="child_9"></ellipse>
+                    </svg>
+                    <svg id="hours">
+                        <g>
+                            <text x='8' y='40' class="textShadow">4</text>
+                            <text x='2' y='38' class="textLetter">4</text>
+                            <text x='26' y='40' class="textShadow">,</text>
+                            <text x='24' y='38' class="textLetter">,</text>
+                            <text x='34' y='40' class="textShadow">0</text>
+                            <text x='28' y='38' class="textLetter">0</text>
+                            <text x='54' y='40' class="textShadow">0</text>
+                            <text x='48' y='38' class="textLetter">0</text>
+                            <text x='74' y='40' class="textShadow">0</text>
+                            <text x='68' y='38' class="textLetter">0</text>
+                        </g>
+                    </svg>
+                </span>
+                sessions
+            </h4>
+        </div>
+
+        <div id='title' class="text-white m-auto">
+            <h4 class="text-center p-3">
+                Tutoring students and professionals one session at the time
+            </h4>
+            <a target="_blank" href="https://linkedin.com/in/geronimoperez">
+                <img src="./assets/images/linkedIn.png" class="titleImg">
+            </a>
+            <!-- <a target="_blank" href="https://github.com/Geerooniimoo">
+                <img class="titleImg2" src="./assets/images/github.png">
+            </a> -->
+            <!-- <a target="_blank" href="https://g.page/r/CeWB47Bolh99EAI/review">
+                <img class="titleImg1" src="./assets/images/Google-Reviews.png">
+            </a> -->
+            <a target="_blank" href="https://g.page/r/CeWB47Bolh99EAI/review">
+                <img class="titleImg1" src="./assets/images/google-reviews2.png">
+            </a>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionExample">
+
+            <div class="accordion-item">
+                <h2 class="accordion-item" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h4 class="mx-auto">Students</h4>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="forStudents2">These sessions are for students registered in the Data Visualization or
+                            Full Stack Web Developer boot camp and are allowed to have one or more sessions per week.
+                        </p>
+
+                        <h2>Schedule Session</h2>
+
+                        <div class="scheduleDiv">
+
+                            <a target="_blank" href="https://calendly.com/dv-tutor-team/geronimo-perez"><button
+                                    id="analyst" class="btn btn-outline-primary">
+                                    <h6 class="g-font">Data Analytics</h6>
+                                </button></a>
+
+                            <a target="_blank" href="https://calendly.com/fsf-tutor-team/geronimo-perez"><button
+                                    id="developer" class="btn btn-outline-primary">
+                                    <h6 class="g-font">Web Development</h6>
+                                </button></a>
+                        </div>
+
+                        <h2 class="evalTitle">Evaluation</h2>
+                        <a target="_blank"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdb4ejjbqoqKO-Q4k7zeO_xwykwB0dxYLWYm1mX5Ik45MzEeg/viewform">
+                            <button id="evaluation">
+                                <h6 class="g-font">Student's Evaluation</h6>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-item" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
+                        <h4 class="mx-auto">Knowledge base</h4>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body knowledgeDiv">
+                        <div class="analyticDiv">
+                            <h3>Data Analytics: </h3>
+                            Intermediate Excel
+                            <ul>
+                                <li> Pivot Tables</li>
+                                <li> VBA Scripting</li>
+                            </ul>
+                            Fundamental Statistics
+                            <ul>
+                                <li> Modelling</li>
+                                <li> Forecast</li>
+                            </ul>
+                            Python Programming
+                            <ul>
+                                <li> Python 3</li>
+                                <li> NumPy</li>
+                                <li> Pandas</li>
+                                <li> Matplotlib</li>
+                                <li> API Interactions</li>
+                            </ul>
+                            Databases
+                            <ul>
+                                <li> Postgres/pgAdmin</li>
+                                <li> MongoDB</li>
+                                <li> Extract-Transform-Load (ETL)</li>
+                            </ul>
+
+                            Front End Web Visualization
+                            <ul>
+                                <li> HTML</li>
+                                <li> CSS</li>
+                                <li> Bootstrap</li>
+                                <li> Dashboarding</li>
+                                <li> JavaScript</li>
+                                <li> Geomapping with JavaScript libraries</li>
+                            </ul>
+
+                            Business Intelligence Software
+                            <ul>
+                                <li> Tableau</li>
+                            </ul>
+
+                            Advanced Topics
+                            <ul>
+                                <li> Big Data Analytics with Hadoop</li>
+                                <li> Amazon Web Services</li>
+                                <li> Machine Learning</li>
+                            </ul>
+
+                        </div>
+                        <div class="webDiv">
+                            <h3>Web Developer: </h3>
+                            Computer Science applied to JavaScript
+                            <ul>
+                                <li> Design Patterns</li>
+                                <li> Data Structures</li>
+                                <li> Algorithms</li>
+                                <li> Big O Notation</li>
+                            </ul>
+
+                            Browser Based Technologies
+                            <ul>
+                                <li> HTML</li>
+                                <li> CSS</li>
+                                <li> JavaScript</li>
+                                <li> jQuery</li>
+                                <li> Responsive Design</li>
+                                <li> Bootstrap</li>
+                                <li> Handlebars</li>
+                                <li> Local Storage, Session Storage, IndexedDB</li>
+                                <li> React.js</li>
+                            </ul>
+
+                            Deployment
+                            <ul>
+                                <li> Heroku</li>
+                                <li> Git</li>
+                            </ul>
+
+                            Locally Popular MVC Framework
+                            <ul>
+                                <li> C#/ASP.NET</li>
+                                <li> Python/Django</li>
+                                <li> Java/Spring</li>
+                                <li> PHP/Laravel</li>
+                            </ul>
+
+                            Databases
+                            <ul>
+                                <li> MySQL</li>
+                                <li> MongoDB</li>
+                            </ul>
+
+                            Server-Side Development
+                            <ul>
+                                <li> Express</li>
+                                <li> User Authentication</li>
+                                <li> Sequelize</li>
+                                <li> MERN Stack (MongoDB, Express.js, React.js, Node.js)</li>
+                            </ul>
+
+                            Quality and Performance
+                            <ul>
+                                <li> Unit Testing</li>
+                                <li> Google Lighthouse</li>
+                                <li> Webpack</li>
+                                <li> PWAs (Progressive Web Apps)</li>
+                                <li> Lazy Loading</li>
+                                <li> Service Workers</li>
+                            </ul>
+
+                            Accessibility
+                            <ul>
+                                <li> Semantic HTML</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-item" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                        <h4 class="mx-auto">Professionals</h4>
+                    </button>
+                </h2>
+
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body professionalDiv">
+
+                        <h2>Schedule Private Session</h2>
+                        <div class="scheduleDiv">
+
+                            <a target="_blank"
+                                href="https://calendly.com/geronimo-perez/private-tutoring-session"><button id="analyst"
+                                    class="btn btn-outline-primary">
+                                    <h6 class="g-font">Data Analytics</h6>
+                                </button></a>
+
+                            <a target="_blank"
+                                href="https://calendly.com/geronimo-perez/private-tutoring-session"><button
+                                    id="developer" class="btn btn-outline-primary">
+                                    <h6 class="g-font">Web Development</h6>
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="typeDiv">
+        <div id="titleDiv">
+            <h4 id="speechTitle" class="scroll2"></h4>
+        </div>
+        <div class="type">
+        </div>
+        <div id="rewind">
+            <svg>
+                <polygon fill="black" stroke="red" points="30,72 50,60 60,85"></polygon>
+                <polygon fill="black" stroke="red" points="55,60 61,60 72,87 65,86"></polygon>
+            </svg>
+        </div>
+        <div id="forward">
+            <svg>
+                <polygon fill="black" stroke="red" points="30,60 70,75 45,85"></polygon>
+                <polygon fill="black" stroke="red" points="18,57 25,59 41,87 35,87"></polygon>
+            </svg>
+
+        </div>
+    </div>
+
+    <div id="carousel">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="./assets/js/speech.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
