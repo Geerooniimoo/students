@@ -96,6 +96,9 @@ a {
 
 #accordionExample {
     display:flex;
+    justify-content: center;
+    position: relative;
+    left: 50px;
     width: fit-content;
     margin-bottom: 25px;
 }
@@ -409,9 +412,15 @@ a {
     text-align-last: left;
 }
 
+#collapseOne, #collapseTwo {
+position: relative;
+left: -150px;
+}
+
 #collapseTwo .scheduleDev {
     top: 139px;
 }
+
 
 .knowledgeDiv {
     position: relative;
