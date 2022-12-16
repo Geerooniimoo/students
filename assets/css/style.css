@@ -1,4 +1,4 @@
-/* #accordionExample * {
+ /* * {
     border: 2px dotted red;
 } */
 
@@ -100,21 +100,24 @@ a {
     position: relative;
     left: 50px;
     width: fit-content;
-    margin-bottom: 25px;
 }
+
 .accordion-button:focus {
     border: none;
     box-shadow: none;
 }
+
 .img {
     border: 2px solid black;
     border-radius: 12px;
     padding: 0;
 }
+
 #topDiv {
     background-size: 100% 75%;
     background-repeat: no-repeat;
 }
+
 .linkImg {
     z-index: 5;
     color: black;
@@ -187,10 +190,9 @@ a {
     border: 1px solid black;
 }
 
-#headingTwo {
+#headingTwo, #headingThree {
     position: relative;
     z-index: 8;
-    background: white;
 }
 
 #scheImg {
@@ -209,7 +211,7 @@ a {
     transform: skewX(40deg);
     width: 650px;
     height: 150px;
-    box-shadow: -25px 15px 5px grey;
+    /* box-shadow: -25px 15px 5px grey; */
     border-top: 4px solid #a39f9f;
     border-right: 4px solid #a39f9f;
     border-left: 4px solid red;
@@ -352,9 +354,9 @@ a {
     font-family: Abril Fatface, Arial, sans-serif;
 }
 
-.accordion-flush .accordion-item:last-of-type .accordion-button.collapsed {
-    border: 2px solid black;
-    border-radius: 8px;
+button {
+    border: 2px solid black !important;
+    border-radius: 8px !important;
     height: 50px;
 }
 
@@ -366,9 +368,9 @@ a {
 
 .accordion-item {
     max-width: 400px;
-    margin: 15px 20px 0px 20px;
+    margin: 20px;
     width: 250px;
-    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 #analyst, #developer, #evaluation {
@@ -500,7 +502,7 @@ left: -150px;
     transform: skewX(-40deg);
     background: black;
     width: 650px;
-    box-shadow: -25px 15px 5px grey;
+    /* box-shadow: -25px 15px 5px grey; */
     border-right: 4px solid #a39f9f;
     border-left: 4px solid red;
     border-top: 4px solid red;
@@ -892,9 +894,13 @@ left: -150px;
     body {
         background-size: 100% 600vh;
     }
+
+    .sessions {
+        margin: 0;
+    }
     
     #accordionExample {
-        width: 100%;
+        width: 80%;
         margin: 25px auto;
         justify-content: space-around;
     }
@@ -910,7 +916,7 @@ left: -150px;
 
     .sessions h4 {
         font-size: 2.2rem;
-        margin-top: 80px;
+        margin-top: 40px;
     }
 
     .scheduleDiv {
@@ -921,10 +927,6 @@ left: -150px;
 
     .professionalDiv {
         padding-left: 80px;
-    }
-
-    #topDiv {
-        margin-top: 60px;
     }
 
     .forStudents2 {
@@ -1090,6 +1092,7 @@ left: -150px;
         display: flex;
         flex-direction: column;
         width: 95%;
+        left: 0;
     }
 
     .accordion-item {
@@ -1126,7 +1129,7 @@ left: -150px;
         background: transparent;
     }
 
-    #headingTwo {
+    #headingTwo, #headingThree {
         position: relative;
         z-index: 8;
         background: transparent;
