@@ -225,6 +225,17 @@ a {
     z-index: 2;
 }
 
+.forStudents2 {
+    color: white;
+    width: 750px;
+    position: relative;
+    right: 40px;
+}
+
+.forStudents2 a {
+    color: rgb(14, 74, 127);
+}
+
 .scheduleTitle2 {
     display: none;
 }
@@ -942,16 +953,16 @@ a {
         left: 60px;
     }
 
+    .forStudents2 {
+        width: 580px;
+    }
+
     h3 {
         font-size: 1.3rem;
     }
 
     #topDiv {
         margin-top: 60px;
-    }
-
-    .forStudents2 {
-        width: 700px;
     }
 
     .studentModal .scheduleDiv {
@@ -1063,14 +1074,6 @@ a {
     .schedule {
         width: 100vw;
         left: 0;
-    }
-
-    .scheduleTitle1 {
-        display: none;
-    }
-
-    .scheduleTitle2 {
-        display: block;
     }
 
     .schedule div {
@@ -1233,9 +1236,10 @@ a {
     }
 
     .forStudents2 {
-        font-size: .88rem;
+        font-size: .86rem;
         width: auto;
         padding: 0;
+        right: 0;
     }
 
     #evaluation {
