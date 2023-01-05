@@ -423,6 +423,10 @@ a {
     box-shadow: -20px 20px 20px #00000080;
 }
 
+#analyst:hover, #developer:hover {
+    filter: brightness(1.3);
+}
+
 .evalTitle {
     margin-top: 35px;
 }
