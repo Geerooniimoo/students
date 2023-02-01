@@ -4,6 +4,7 @@
 
 body {
     background-image: linear-gradient(24deg, white 35%, #0e5daf 90%, black 110%);
+    background-image: linear-gradient(24deg, white 35%, rgb(245, 167, 24) 75%, black 150%);
     height: 1200px;
     background-size: 100% 280vh;
     font-family: Abril Fatface, Arial, sans-serif;
