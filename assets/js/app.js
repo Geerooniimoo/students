@@ -75,3 +75,20 @@ function handleForward() {
         document.querySelector('.type').innerHTML = '',
         handleSpeech()) : '';
 };
+
+let modal1 = document.getElementById('myModal1')
+let modal2 = document.getElementById('myModal2')
+
+analyst.onclick = () => modal1.style.display = "block";
+developer.onclick = () => modal2.style.display = "block";
+
+window.onclick = el => {
+    if (
+            el.target == modal1 ||
+            el.target == modal2 ||
+            el.target.classList.value == "close"
+       ) {
+            modal1.style.display = "none";
+            modal2.style.display = "none";
+       }
+}

@@ -212,20 +212,17 @@
             <p class="forStudents2">These sessions are for students registered in the Data Visualization or
                 Full Stack Web Developer boot camp and are allowed to have one or more sessions per week. If you are not
                 one of these students or already graduated from the program click on <a
-                    href="https://AnalyticsAndWebDevelopment.com">Analytics And Web Development pay sessions.</a>
+                    href="https://AnalysisAndDevelopment.com">Analytics And Web Development pay sessions.</a>
             </p>
 
             <div>
+                <button id="analyst" class="btn btn-outline-primary">
+                    <h6 class="g-font">Data Analytics</h6>
+                </button>
 
-                <a target="_blank" href="https://calendly.com/dv-tutor-team/geronimo-perez"><button id="analyst"
-                        class="btn btn-outline-primary">
-                        <h6 class="g-font">Data Analytics</h6>
-                    </button></a>
-
-                <a target="_blank" href="https://calendly.com/fsf-tutor-team/geronimo-perez"><button id="developer"
-                        class="btn btn-outline-primary">
-                        <h6 class="g-font">Web Development</h6>
-                    </button></a>
+                <button id="developer" class="btn btn-outline-primary">
+                    <h6 class="g-font">Web Development</h6>
+                </button>
             </div>
 
             <h2 class="evalTitle">Evaluation</h2>
@@ -244,18 +241,12 @@
         </div>
         <div class="type">
         </div>
+
         <div id="rewind">
-            <svg>
-                <polygon fill="black" stroke="red" points="30,72 50,60 60,85"></polygon>
-                <polygon fill="black" stroke="red" points="55,60 61,60 72,87 65,86"></polygon>
-            </svg>
+            <h1><<</h1>
         </div>
         <div id="forward">
-            <svg>
-                <polygon fill="black" stroke="red" points="30,60 70,75 45,85"></polygon>
-                <polygon fill="black" stroke="red" points="18,57 25,59 41,87 35,87"></polygon>
-            </svg>
-
+            <h1>>></h1>
         </div>
     </div>
 
@@ -263,6 +254,23 @@
     </div>
 
     <a href="mailto:concerns@AnalyticsAndWebDevelopment.com"> <button id="emailBtn">✉ Email us</button> </a>
+
+
+    <div id="myModal1" class="modal myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/dv-tutor-team/geronimo-perez?background_color=7d2626&text_color=ffffff&primary_color=2997F5" style="min-width:320px;height:800px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        </div>
+    </div>
+
+    <div id="myModal2" class="modal myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/fsf-tutor-team/geronimo-perez?background_color=007d7d&text_color=ffffff&primary_color=2AF801" style="min-width:320px;height:800px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
         integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
