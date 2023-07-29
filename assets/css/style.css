@@ -914,6 +914,7 @@ a {
 
 .modal {
     position: absolute;
+    overflow: visible;
 }
 
 @keyframes smoke {
@@ -1392,3 +1393,4 @@ a {
     }
 
 }
+
